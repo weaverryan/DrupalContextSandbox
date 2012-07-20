@@ -1,3 +1,7 @@
+parameters:
+    # this overrides the class for the core version of this class
+    behat.definition.proposal.annotated.class: Drupal\Extension\Definition\Proposal\AnnotatedDefinitionProposal
+
 services:
     drupal.region_selector:
         class: Drupal\Extension\Selector\RegionSelector
