@@ -4,3 +4,6 @@ default:
       goutte: ~
       selenium2: ~
       base_url: http://en.wikipedia.org
+
+    # initialize our extension
+    Drupal\Extension\DrupalExtension:
