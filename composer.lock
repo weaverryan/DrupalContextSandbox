@@ -22,8 +22,8 @@
         {
             "package": "behat/mink-extension",
             "version": "dev-master",
-            "source-reference": "2fc55fdd358b121b5439acc76be6fa654ebe2e28",
-            "commit-date": "1341477571"
+            "source-reference": "da58c1b572349310ce5b65066a4d8b7e487a63a7",
+            "commit-date": "1342818063"
         },
         {
             "package": "behat/mink-goutte-driver",
@@ -36,12 +36,6 @@
             "version": "dev-master",
             "source-reference": "v1.0.2",
             "commit-date": "1341477123"
-        },
-        {
-            "package": "fabpot/goutte",
-            "version": "dev-master",
-            "alias-pretty-version": "1.0.x-dev",
-            "alias-version": "1.0.9999999.9999999-dev"
         },
         {
             "package": "fabpot/goutte",
@@ -140,8 +134,8 @@
         {
             "package": "symfony/event-dispatcher",
             "version": "dev-master",
-            "source-reference": "v2.1.0-BETA3",
-            "commit-date": "1342347231"
+            "source-reference": "451e0befb42a5552d4e143edcb74e3b4a9733bea",
+            "commit-date": "1342739894"
         },
         {
             "package": "symfony/finder",
@@ -164,8 +158,8 @@
         {
             "package": "symfony/process",
             "version": "dev-master",
-            "source-reference": "v2.1.0-BETA3",
-            "commit-date": "1342347231"
+            "source-reference": "ae0635cf7768aeab3c7935389e651498706b87ac",
+            "commit-date": "1342632812"
         },
         {
             "package": "symfony/translation",
