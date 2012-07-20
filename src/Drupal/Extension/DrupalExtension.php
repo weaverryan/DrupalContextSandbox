@@ -11,7 +11,8 @@ class DrupalExtension extends Extension
 {
   public function load(array $config, ContainerBuilder $container)
   {
-    // todo ..
+    $loader = new YamlFileLoader($container, new FileLocator(__DIR__ . '/config'));
+    $loader->load('services.yml');
   }
 }
 

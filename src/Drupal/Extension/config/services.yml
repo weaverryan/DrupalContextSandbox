@@ -1,0 +1,5 @@
+services:
+    drupal.region_selector:
+        class: Drupal\Extension\Selector\RegionSelector
+        tags:
+            - { name: behat.mink.selector, alias: region }

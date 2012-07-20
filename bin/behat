@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+
+/*
+ * This file is part of the Behat.
+ * (c) Konstantin Kudryashov <ever.zet@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+define('BEHAT_PHP_BIN_PATH', getenv('PHP_PEAR_PHP_BIN') ?: '/usr/bin/env php');
+define('BEHAT_BIN_PATH',     __FILE__);
+define('BEHAT_VERSION',      'DEV');
+
+require 'autoload.php';
+
+$app = new Behat\Behat\Console\BehatApplication(BEHAT_VERSION);
+$app->run();

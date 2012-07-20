@@ -54,4 +54,20 @@ class FeatureContext extends MinkContext
         new When('I press "searchButton"'),
     );
   }
+
+  /**
+   * @Given /^I should see "([^"]*)" in the "([^"]*)" region$/
+   */
+  public function iShouldSeeInTheRegion($text, $region) {
+    /** @var $regionNodeElement \Behat\Mink\Element\NodeElement */
+    $regionNodeElement = $this->getSession()->getPage()->find('region', $region);
+
+    if (!$regionNodeElement) {
+      throw new \Exception(sprintf('Cannot find the "%s" region!', $region));
+    }
+
+    if (strpos($regionNodeElement->getText(), $text) === false) {
+      throw new \Exception(sprintf('Cannot find text "%s" inside the "%s" region', $text, $region));
+    }
+  }
 }
