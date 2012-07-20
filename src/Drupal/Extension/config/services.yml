@@ -1,5 +1,9 @@
 services:
     drupal.region_selector:
         class: Drupal\Extension\Selector\RegionSelector
+        arguments:
+            # inject the CSSSelector
+            - "@behat.mink.selector.css"
+            - %drupal.region_map%
         tags:
             - { name: behat.mink.selector, alias: region }

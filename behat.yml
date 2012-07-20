@@ -7,3 +7,5 @@ default:
 
     # initialize our extension
     Drupal\Extension\DrupalExtension:
+      regions:
+        left:  "#mp-left"
